@@ -13,10 +13,6 @@
 }
 
 
-.nav-black {
-    background-color: #000;
-    color: #fff;
-}
 
 .navbar-dark .navbar-brand{
     color: #fff;
@@ -87,6 +83,11 @@ label {
     justify-content: left;
     padding-left: 7.2rem;
 }
+
+.nav-black {
+    background-color: black;
+    color: white;
+  }
 
 
 @media only screen and (max-width: 550px) {

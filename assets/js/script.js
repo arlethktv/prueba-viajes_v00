@@ -1,8 +1,9 @@
 
+//Navbar
 $(document).scroll( function(e){
   const y = $("html").scrollTop();
-  if(y > 600) $("nav").addClass("navbar-black")
-  else $("nav").removeClass("navbar-black")
+  if(y > 300) $("nav").addClass("nav-black")
+  else $("nav").removeClass("nav-black")
 })
 
 
@@ -16,3 +17,12 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 
  
+//Tooltip redes sociales
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip({
+      placement : 'right'
+  });
+});
+
+
+var myModal = new bootstrap.Modal(document.getElementById('myModal'), options)

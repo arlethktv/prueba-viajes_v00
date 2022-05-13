@@ -34,25 +34,28 @@
   <script src="/assets/js/script.js"> </script>
   <title></title>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  
 </head>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 <body class="fondo" class="nav-black">
 
   <!-- Navbar -->
-  <nav class=" navbar navbar-expand-lg px-2 navbar-dark fixed-top dark-celu ">
+  <nav class="navbar navbar-expand-lg px-2 fixed-top navbar-dark dark-celu">
     <div class="container">
-      <!--Logo-->
-      <img src="assets/img/viajes.svg" alt="logoviajes" />
-
-      <!--Nombre Marca-->
-      <a class="navbar-brand py-2" href="#">Viajes Chile</a>
+      <a class="navbar-brand" href="#">
+        <!--Logo-->
+        <img src="assets/img/viajes.svg" width="30" height="30" class="d-inline-block align-top" alt="viajeschile"
+          loading="lazy" />
+        <!--Nombre Marca-->
+        Viajes Chile
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
 
 
       <!-- Menu Navbar-->
@@ -255,8 +258,28 @@
     </div>
 
     <div class="mb-3 py-2 px-5">
-      <button type="submit" class="btn btn-primary bg-info">ENVIAR</button>
+      <button type="button" type="submit" class="btn btn-primary bg-info" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">ENVIAR</button>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Su mensaje a sido enviado</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            GRACIAS!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
   </form>
@@ -267,12 +290,13 @@
   <footer class="container-fluid py-3 bg-info" id="footer">
     <h3 class="letrasF"> VIAJES CHILE </h3>
     <div class="iconos">
-      <i class="fab fa-github-square fa-2x"></i>
-      <i class="fab fa-linkedin fa-2x"></i>
-      <i class="fab fa-twitter-square fa-2x"></i>
-      <i class="fab fa-facebook-square fa-2x"></i>
+      <i class="fab fa-github-square fa-2x" data-toggle="tooltip" data-bs-placement="right" title="GITHUB"></i>
+      <i class="fab fa-linkedin fa-2x" data-toggle="tooltip" data-bs-placement="right" title="LINKEDIN"></i>
+      <i class="fab fa-twitter-square fa-2x" data-toggle="tooltip" data-bs-placement="right" title="TWITTER"></i>
+      <i class="fab fa-facebook-square fa-2x" data-toggle="tooltip" data-bs-placement="right" title="FACEBOOK"></i>
     </div>
 
   </footer>
 </body>
+
 </html>
